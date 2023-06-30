@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swifty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" height="200" alt="Home button"></a>
+            <div class="nav-links", id="navLinks">
+              <i class="fa fa-times", onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars", onclick="showMenu()"></i>
+        </nav>
+        <h1 >Contact Us</h1>
+    </section>
+
+    <!------Contact us------>
+ 
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.0936553072115!2d55.18665920341843!3d25.098690842626695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b834fc7c2cb%3A0x30419116f08ee372!2s33%204c%20St%20-%20Al%20Barsha%20-%20Al%20Barsha%203%20-%20Dubai!5e0!3m2!1sen!2sae!4v1687188387475!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <h2>Feel free to use any of our socials to contact us or to purchase!</h2>
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Dubai</h5>
+                        <p>33 4c St - Al Barsha - Al Barsha 3</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+971 50 330 9263</h5>
+                        <p>24/7 service (WhatsApp)</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>swifty656@gmail.com</h5>
+                        <p>33 4c St - Al Barsha - Al Barsha 3</p>
+                    </span>
+                </div>
+            </div>
+<div class="contact-col">
+
+    <form action="https://formsubmit.co/65582235b1d8ff3c25340727759c865b" method="post">
+        <input type="text" name="name" id="name_input" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your Email" required>
+        <input type="number" name="tel" placeholder="Enter your Phone number" required>
+        <textarea rows="8" name="message" placeholder="Enter a message"></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Dear customer.
+
+        Thank you for reaching out to us. This is an automated response to let you know that we have received your email and will get back to you as soon as possible. We appreciate your patience.
+        
+        In the meantime, here are a few things you can expect:
+        
+        We will review your message thoroughly.
+        Our team will assess your query and gather any necessary information.
+        We will prioritize your request based on its urgency.
+        Please note that our response time may vary depending on the volume of emails we receive. Rest assured, we value your inquiry and will do our best to address it promptly.
+        
+        If you have any urgent matters or need immediate assistance, please contact our customer support hotline at [Phone Number].
+        
+        Thank you again for contacting us.
+        
+        Best regards,
+
+        Swifty">
+        <a href="index.html"><button type="submit" onclick="location.reload()" class="hero-btn red-btn">Send Message</button></a>
+    </form>
+
+</div>
+        </div>
+    </section>
+
+    <!-----FOOTER------>
+
+    <section class="footer">
+        <h3>About Us!</h3>
+        <p><b>We are a dynamic dropshipping startup dedicated to bringing you the latest trends and high-quality products from around the world. <br> Our mission is to provide a seamless shopping experience and exceptional customer service.</b></p>
+        <div class="icons">
+            <a href="https://facebook.com"><i class="fa fa-facebook" style="font-size: 1.5em;"></i></a>
+            <a href="https://twitter.com"><i class="fa fa-twitter" style="font-size: 1.5em;"></i></a>
+            <a href="https://instagram.com"><i class="fa fa-instagram" style="font-size: 1.5em;"></i></a>
+            <a href="https://whatsapp.com"><i class="fa fa-whatsapp" style="font-size: 1.5em;"></i></a>
+            <a href="https://tiktok.com"><img src="images/tiktok.ico" height="28"></a>
+        </div>    
+        <p><b>We do our best to confirm our clients satisfaction</b> <i class="fa fa-gratipay" style="font-size: 1.7em;"></i></p>
+    </section>
+
+
+
+
+    <!-----JAVASCRIPT TOGGLE MENU----->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";}
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

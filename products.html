@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swifty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" height="200" alt="Home button"></a>
+            <div class="nav-links", id="navLinks">
+              <i class="fa fa-times", onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars", onclick="showMenu()"></i>
+        </nav>
+        <h1>Featured Products</h1>
+    </section>
+
+       <!-----Display----->
+
+       <section class="display">
+        <h2>Discover the epitome of style and innovation with our handpicked collection of featured products.</h2>
+        <div class="row">
+            <div class="display-col">
+                <a href="sproduct.html"><img src="images/earbud1.jpg" height="530"></a>
+                <h3>Apple Original Wireless Earbuds</h3>
+                <p>Apple Original Wireless Earbuds Bluetooth Earbuds Tws Gaming Headset Sport Headphones for IPhone Smartphones</p>
+                <h3>150.00AED</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <a href="contact.html"><button class="but" >Purchase</button></a>
+            </div>
+            <div class="display-col">
+                <a href="sproduct2.html"><img src="images/cases.jpg" height="550"></a>
+                <h3>Silicone Case For Airpods</h3>
+                <p>Silicone Case For Airpods 1 2 Universal Protective Cover Wireless Earphone Replaceable Protective Cover For Apple AirPods 1 2</p>
+                <h3>30AED</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <a href="contact.html"><button class="but" >Purchase</button></a>
+            </div>
+            <div class="display-col">
+                <a href="sproduct3.html"><img src="images/C1.jpg" height="545"></a>
+                <h3>Case for Apple AirPods</h3>
+                <p>Cover for Apple AirPods 1 2 3 3rd Case for AirPods Pro Case Cute Cartoon Yoda Mickey Stitch Spiderman Earphone Case Accessories</p>
+                <h3>30.00AED</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <a href="contact.html"><button class="but" >Purchase</button></a>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!------Course------>
+    <section class="product">
+        <h1>What Makes Us Special!</h1>
+        <p>Unlock the extraordinary with <b>Swifty</b></p>
+
+        <div class="row">
+            <div class="product-col">
+                <h3>Save Money</h3>
+                <img src="images/money.ico" alt="Save Money">
+
+            </div>
+            <div class="product-col">
+                <h3>24/7 Service</h3>
+                <img src="images/clock.ico" alt="24/7 Service">
+                
+        </div>
+        <div class="product-col">
+            <h3>Best Prices</h3>
+            <img src="images/cash.ico" alt="Best Prices">
+            
+
+    </section>
+
+    <!-----FOOTER------>
+
+    <section class="footer">
+        <h3>About Us!</h3>
+        <p><b>We are a dynamic dropshipping startup dedicated to bringing you the latest trends and high-quality products from around the world. <br> Our mission is to provide a seamless shopping experience and exceptional customer service.</b></p>
+        <div class="icons">
+            <a href="https://facebook.com"><i class="fa fa-facebook" style="font-size: 1.5em;"></i></a>
+            <a href="https://twitter.com"><i class="fa fa-twitter" style="font-size: 1.5em;"></i></a>
+            <a href="https://instagram.com"><i class="fa fa-instagram" style="font-size: 1.5em;"></i></a>
+            <a href="https://whatsapp.com"><i class="fa fa-whatsapp" style="font-size: 1.5em;"></i></a>
+            <a href="https://tiktok.com"><img src="images/tiktok.ico" height="28"></a>
+        </div>    
+        <p><b>We do our best to confirm our clients satisfaction</b><i class="fa fa-gratipay" style="font-size: 1.7em;"></i></p>
+    </section>
+
+
+
+
+    <!-----JAVASCRIPT TOGGLE MENU----->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";}
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

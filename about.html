@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swifty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" height="200px" alt="Home button"></a>
+            <div class="nav-links", id="navLinks">
+              <i class="fa fa-times", onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars", onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!------Abous Us Content------>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are <b>Swifty</b>, a trusted name in the dropshipping industry.</h1>
+                <p><b>We are a dynamic dropshipping startup dedicated to bringing you the latest trends and high-quality products from around the world. Our mission is to provide a seamless shopping experience and exceptional customer service.</b></p>
+                <a href="index.html" class="hero-btn red-btn"><b> EXPLORE NOW!</b></a>
+            </div>
+            <div class="about-col">
+                <img src="images/Swifbanner.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-----FOOTER------>
+
+    <section class="footer">
+        <h3>About Us!</h3>
+        <p><b>We are a dynamic dropshipping startup dedicated to bringing you the latest trends and high-quality products from around the world. <br> Our mission is to provide a seamless shopping experience and exceptional customer service.</b></p>
+        <div class="icons">
+            <a href="https://facebook.com"><i class="fa fa-facebook" style="font-size: 1.5em;"></i></a>
+            <a href="https://twitter.com"><i class="fa fa-twitter" style="font-size: 1.5em;"></i></a>
+            <a href="https://instagram.com"><i class="fa fa-instagram" style="font-size: 1.5em;"></i></a>
+            <a href="https://whatsapp.com"><i class="fa fa-whatsapp" style="font-size: 1.5em;"></i></a>
+            <a href="https://tiktok.com"><img src="images/tiktok.ico" height="28"></a>
+        </div>    
+        <p><b>We do our best to confirm our clients satisfaction</b> <i class="fa fa-gratipay" style="font-size: 1.7em;"></i></p>
+    </section>
+
+
+
+
+    <!-----JAVASCRIPT TOGGLE MENU----->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";}
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
