@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swifty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" height="200" alt="Home button"></a>
+            <div class="nav-links", id="navLinks">
+              <i class="fa fa-times", onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars", onclick="showMenu()"></i>
+        </nav>
+        <h1>Featured Products / Scale</h1>
+    </section>
+
+    <!------Sproduct Content------->
+
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/scale2.jpg" width="100%" id="ProductImg">
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img src="images/scale2.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+              <img src="images/scale.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+              <img src="images/scale3.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+              <img src="images/scale4.jpg" width="100%" class="small-img">
+            </div>
+
+          </div>
+          <div class="col-2">
+              <p>Home / Scale</p>
+              <h2>Intelligent Electronic Weight Scale</h2>
+              <h4>150.OOAED</h4>
+              <a href="contact.html" class="add-to-cart-button">Purchase</a>
+              <h3>Product Details<i class="fa fa-indent"></i></h3>
+              <br>
+              <p><b>Smart weight scale compatible with bluetooth smart weight loss body fat scale
+                feature:
+                Measure multiple body data and master all body changes
+                Intelligent sensing, which is called automatic power on and automatic power off
+                R10 rounded corners anti-collision, anti-skid and anti-rollover
+                Indoor temperature sensor, Bluetooth compatible APP one-click connection.</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var ProductImg = document.getElementById("ProductImg");
+      var SmallImg = document.getElementsByClassName("small-img")
+
+      SmallImg[0].onclick = function()
+      {
+        ProductImg.src = SmallImg[0].src;
+      }
+      SmallImg[1].onclick = function()
+      {
+        ProductImg.src = SmallImg[1].src;
+      }
+      SmallImg[2].onclick = function()
+      {
+        ProductImg.src = SmallImg[2].src;
+      }
+      SmallImg[3].onclick = function()
+      {
+        ProductImg.src = SmallImg[3].src;
+      }
+    </script>
+    <!----You might like page------>
+
+    <section class="display">
+        <h2>Discover the epitome of style and innovation with our handpicked collection of featured products.</h2>
+        <div class="row">
+            <div class="display-col">
+                <a href="products.html"><img src="images/earbud1.jpg" height="530"></a>
+                <h3></h3>
+                <p>Apple Original Wireless Earbuds Bluetooth Earbuds Tws Gaming Headset Sport Headphones for IPhone Smartphones</p>
+                <h3>149.99AED</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="display-col">
+                <a href="products.html"><img src="images/cases.jpg" height="550"></a>
+                <h3>Silicone Case For Airpods</h3>
+                <p>Silicone Case For Airpods 1 2 Universal Protective Cover Wireless Earphone Replaceable Protective Cover For Apple AirPods 1 2</p>
+                <h3>29.99AED</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="display-col">
+                <a href="products.html"><img src="images/C1.jpg" height="545"></a>
+                <h3>Case for Apple AirPods</h3>
+                <p>Cover for Apple AirPods 1 2 3 3rd Case for AirPods Pro Case Cute Cartoon Yoda Mickey Stitch Spiderman Earphone Case Accessories</p>
+                <h3>29.99AED</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="display-col">
+                <a href="products.html"><img src="images/gb1.jpg" height="545"></a>
+                <h3>Gameboy Classic Design Phone Case for IPhone</h3>
+                <p>Gameboy Classic Design Phone Case for IPhone 13 14 12 11 Pro Max XS XR X 8 7 Plus SE 2022 IPone 13Pro 14Pro I14</p>
+                <h3>65.00AED</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="display-col">
+                <a href="products.html"><img src="images/scale2.jpg" height="545"></a>
+                <h3>Intelligent Electronic Weight Scale</h3>
+                <p>Intelligent Electronic Weight Scale with precise measurement, LED display, solid color design for a stylish and healthy bathroom experience.</p>
+                <h3>85.00AED</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="display-col">
+              <a href="products.html"><img src="images/speak.jpg" height="545"></a>
+              <h3>Compact and versatile mini speaker</h3>
+              <p>Compact and versatile mini speaker with dual card support, subwoofer, FM radio, and TF card compatibility for on-the-go audio bliss.</p>
+              <h3>59.99AED</h3>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----FOOTER------>
+
+    <section class="footer">
+        <h3>About Us!</h3>
+        <p><b>We are a dynamic dropshipping startup dedicated to bringing you the latest trends and high-quality products from around the world. <br> Our mission is to provide a seamless shopping experience and exceptional customer service.</b></p>
+        <div class="icons">
+            <a href="https://facebook.com"><i class="fa fa-facebook" style="font-size: 1.5em;"></i></a>
+            <a href="https://twitter.com"><i class="fa fa-twitter" style="font-size: 1.5em;"></i></a>
+            <a href="https://instagram.com"><i class="fa fa-instagram" style="font-size: 1.5em;"></i></a>
+            <a href="https://whatsapp.com"><i class="fa fa-whatsapp" style="font-size: 1.5em;"></i></a>
+            <a href="https://tiktok.com"><img src="images/tiktok.ico" height="28"></a>
+        </div>    
+        <p><b>We do our best to confirm our clients satisfaction</b><i class="fa fa-gratipay" style="font-size: 1.7em;"></i></p>
+    </section>
+  
+  
+  
+  
+      <!-----JAVASCRIPT TOGGLE MENU----->
+  
+      <script>
+          var navLinks = document.getElementById("navLinks");
+  
+          function showMenu(){
+              navLinks.style.right = "0";}
+          function hideMenu(){
+              navLinks.style.right = "-200px";
+          }
+      </script>
+  </body>
+  </html>
